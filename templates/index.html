@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- 搜索条 -->
+    <div class="search_bar">
+        <div>
+            <form action="" method="">
+                <input type="text" id="input" name="car_url">
+                <input type="submit" value="识别汽车"/>
+            </form>
+        </div>
+
+    </div>
+    <!-- 搜索结果 -->
+    <div class="search_out">
+        <div>
+            <a href=""><p><span>车名</span></p></a>
+        </div>
+    </div>
+    <!-- 汽车画像 -->
+    <div class="car_location">
+        <img src="{{ "static" "/img/1.jpg" }}" alt="汽车画像">
+    </div>
+    <!-- 全部汽车 -->
+    <div class="all_car">
+
+        <ul>
+            {% for car in car_name %}
+                <li><a href="{{ url_for('serial', ser=car.1) }}">{{ car.0 }}</a></li>
+
+            {% endfor %}
+
+        </ul>
+
+    </div>
+
+    <!-- 尾部 -->
+    <div></div>
+
+{% endblock %}

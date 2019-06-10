@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .content_list {
+            padding: 0 20px;
+        }
+
+        .content_list > p {
+            box-shadow: 0 0 10px #000000;
+            margin: 10px 0;
+        }
+
+        .content_list > ul {
+            display: none;
+        }
+
+        .content_list > p:hover + .active {
+
+            display: block;
+
+        }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="content_list">
+        <p>引擎<span>+</span></p>
+        <ul class="active">
+            <li><p><span>缸数</span><span>3</span></p></li>
+        </ul>
+    </div>
+    <div class="content_list">
+        <p>引擎<span>+</span></p>
+        <ul class="active">
+            <li><p><span>缸数</span><span>3</span></p></li>
+        </ul>
+    </div>
+    <!-- 脚本 -->
+    <script>
+
+    </script>
+{% endblock %}
+

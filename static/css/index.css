@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	/* color: #FFFFFF; */
+}
+/* 导航页 */
+.nav > ul{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	background: orangered;
+	padding: 15px 0;
+	color:white;
+}
+
+
+/* 搜索条 */
+.search_bar > div{
+	text-align: center;
+}
+/* 搜索结果 */
+.search_out > div{
+	text-align: center;
+	border: 1px solid black;
+	width: 300px;
+	margin: auto;
+}
+/* 所有汽车 */
+.all_car{
+	box-shadow: 10px 10px 15px yellow;
+}
+.all_car > ul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.all_car > ul > li{
+	width: 200px;
+}

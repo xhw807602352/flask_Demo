@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="{{   url_for( 'static', filename= 'css/index.css') }}"/>
+    {% block head %}
+
+    {% endblock %}
+    {% block title %}
+        <title>Title</title>
+    {% endblock %}
+
+</head>
+<body>
+{% block nav %}
+    <!-- 导航 -->
+    <div class="nav">
+        <ul>
+            <li><a href="{{   url_for('index') }}">首页</a></li>
+            <li><a href="{{   url_for('serial', ser=0) }}">车系库</a></li>
+            <li><a href="{{ url_for('car_type', car_t=0) }}">车型库</a></li>
+            <!-- <li>看图识车</li> -->
+            <li><a href="{{ url_for('car_param', car_p=0) }}">汽车参数</a></li>
+        </ul>
+    </div>
+{% endblock %}
+{% block content %}
+
+{% endblock %}
+</body>
+</html>
