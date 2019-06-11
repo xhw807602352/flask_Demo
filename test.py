@@ -1,5 +1,7 @@
-def application(env, start_response):
+from flask import Flask
 
-	start_response('200 OK', [('Content-Type','text/html')])
+app = Flask(__name__)
 
-	return "Hello World"
+@app.route('/')
+def index():
+    return "<span style='color:red'>I am app 1</span>"
