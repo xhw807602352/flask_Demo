@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from CarDetect import client,get_id
+# from CarDetect import client,get_id
 import requests
 import pymysql
 from flask_sqlalchemy  import SQLAlchemy
